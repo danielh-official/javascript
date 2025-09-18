@@ -59,3 +59,16 @@ export function generateDurations(
 
   return durations;
 }
+
+export function generateDurationsAsMarkdownList(
+  beginningDuration,
+  endingDuration,
+  intervalDuration,
+) {
+  const durations = generateDurations(
+    beginningDuration,
+    endingDuration,
+    intervalDuration,
+  );
+  return durations.map(d => `- ${d}`).join("\n");
+}
