@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "duration.js",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "ms": "^2.1.3"
+  }
+}
