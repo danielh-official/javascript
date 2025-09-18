@@ -60,6 +60,8 @@ export function generateDurations(
   return durations;
 }
 
+// TODO: Rather than making this a separte function, have it be a dot annotation for generateDurations (e.g., generateDurations(...).asMarkdownList())
+
 export function generateDurationsAsMarkdownList(
   beginningDuration,
   endingDuration,
