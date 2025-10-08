@@ -2,11 +2,11 @@ import ms from "ms";
 
 /**
  * Generate an array of durations based on interval input (e.g., ["0:00", "30:00", "1:00:00"]); interval input example is in "H:MM:SS" or "MM:SS" format (e.g., "1:30" for 1 minute and 30 seconds, "1:00:00" for 1 hour)
- * 
- * @param {*} beginningDuration 
- * @param {*} endingDuration 
- * @param {*} intervalDuration 
- * @returns 
+ *
+ * @param {*} beginningDuration
+ * @param {*} endingDuration
+ * @param {*} intervalDuration
+ * @returns
  */
 export function generateDurations(
   beginningDuration,
@@ -72,5 +72,5 @@ export function generateDurationsAsMarkdownList(
     endingDuration,
     intervalDuration,
   );
-  return durations.map(d => `- ${d}`).join("\n");
+  return durations.map((d) => `- ${d}`).join("\n");
 }
